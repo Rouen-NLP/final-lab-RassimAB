@@ -119,6 +119,20 @@ Confusion matrix :
 
   ![Distribution of the documents](https://github.com/Rouen-NLP/final-lab-RassimAB/blob/master/cm_nb.png)
 
+  After analysing the confusion matrix, it shows that the model gives good performances for classifing emails and resumes with 94% and 95% precisions respectively as well as Forms and Scientific documents. And the global accuracy was arround 71% as mentioned in the table above. 
+  
+  We deduce that a Naïve bayes classifier is pretty performant in term of text classification, now lets try another model based on neural networks which is MLP.
+
+
+  ### MLP classifier
+  
+  - The MLP classifier have been trained and tested with also the BoW representation while it's the representation that fits the best for these data. For the hyperparameters 
+
+
+
+
+
+
 
 
 
