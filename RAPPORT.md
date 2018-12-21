@@ -1,6 +1,6 @@
 # Documents Classification for American Tobacco group
 
-##### Rassim ABDOU.
+##### Rassim ABDOU
 
 ## Introduction
 
