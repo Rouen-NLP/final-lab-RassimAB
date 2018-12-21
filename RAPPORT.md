@@ -108,14 +108,15 @@ final-lab-RassimAB created by GitHub Classroom
 
 -  According to the grid search approach, the default value of alpha (1.0) with BoW representation gives the best performances and so we'll build a real Naïve bayes model and compute its accuracy on the test data then discuss the precisions and recalls along with the confusion matrix.
 
-   Data | Acc 
+
+Data | Acc 
 ------------ | ------------- 
 Train | 80,5% 
 Dev | 71,3% 
 Test | 71,8% 
 
 Confusion matrix : 
-
+  ![Distribution of the documents](https://github.com/Rouen-NLP/final-lab-RassimAB/blob/master/cm_nb.png)
 
 
 
