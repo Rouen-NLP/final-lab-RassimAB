@@ -126,7 +126,7 @@ Confusion matrix :
 
   ### MLP classifier
   
-  - The MLP classifier have been trained and tested with also the BoW representation while it's the representation that fits the best for these data. For the hyperparameters 
+  - The MLP classifier have been trained and tested with also the BoW representation while it's the representation that fits the best for these data. For the hyperparameters we've done the same approach as before to get the best 
 
 
 
