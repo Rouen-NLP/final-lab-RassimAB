@@ -31,7 +31,7 @@ final-lab-RassimAB created by GitHub Classroom
   
   According to this plot, the distribution is not very unbalanced besides the number of Memos, Emails and Letters Which are slightly raised in this dataset.
   
-  ## 2 - Problem Analysis
+## 2 - Problem Analysis
   
   In this section, we'll analyse the problem and discuss about the solutions that may solve it with the best performances.
 
@@ -43,4 +43,7 @@ final-lab-RassimAB created by GitHub Classroom
 ------------ | ------------- | -------------
 70% | 15% | 15%
 
+  `# Splitting the data
+X_train, X_test, y_train, y_test = train_test_split(df[df.columns[0]], df[df.columns[1]], test_size=0.30)
+X_test, X_dev, y_test, y_dev = train_test_split(X_test, y_test, test_size=0.50)`
 
