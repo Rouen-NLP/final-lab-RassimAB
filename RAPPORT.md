@@ -116,6 +116,7 @@ Dev | 71,3%
 Test | 71,8% 
 
 Confusion matrix : 
+
   ![Distribution of the documents](https://github.com/Rouen-NLP/final-lab-RassimAB/blob/master/cm_nb.png)
 
 
