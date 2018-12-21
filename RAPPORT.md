@@ -77,9 +77,9 @@ final-lab-RassimAB created by GitHub Classroom
   
   Now to choose the best machine learning model, we'll make several test and compare how these 2 data representations infuence the performances. First we set up a naïve bayes model which is the most commun and one of the best models for text classification because it's based on probabilities, and try to figure out which best hyperparameters it would fit with, then we set up a neural network (MLP).
   
-## Documents classification & performance analysis 
+## 3 - Documents classification & performance analysis 
 
-  ### Naïve Bayes classifier
+  ### 3.1 - Naïve Bayes classifier
   
   - The idea is based on running multiple Naïve bayes classifiers with several values of the hyperparameter 'alpha', starting from without smoothing (alpha = 0) to 5.0 with a step or 1. And apply a 5-fold cross validation to test the model accuracy by computer the mean of the 5 experiments
   - We'll start with the BoW representation and then TF-IDF.
@@ -124,7 +124,7 @@ Confusion matrix :
   We deduce that a Naïve bayes classifier is pretty performant in term of text classification, now lets try another model based on neural networks which is MLP.
 
 
-  ### MLP classifier
+  ### 3.2 - MLP classifier
   
   - The MLP classifier have been trained and tested with also the BoW representation while it's the representation that fits the best for these data. For the hyperparameters we've done the same approach as before to get the best value for the parameter that influence the performance of the MLP (which is alpha), the results we got are the following :
 
@@ -146,8 +146,17 @@ Test | 76%
 
 Confusion matrix : 
 
-![Distribution of the documents](https://github.com/Rouen-NLP/final-lab-RassimAB/blob/master/cm_nb2.png)
+![Distribution of the documents](https://github.com/Rouen-NLP/final-lab-RassimAB/blob/master/cm_mlp.png)
 
+  - The confusion matrix is well-balanced comparing the the previous one, there are even some classes that has almost 100% of score (like Resume and Email) and the classification error is well distributed over all the classes which means that the classifier knows how to generalize.
+
+  - If we want to compare all the models with every data representation that we did above, we deduce that the mlp with BoW representation gives the best performances comparing to naïve bayes model, even if this last is slightly different, and about the tf-idf representations, it wasn't a good method to classify this kind of documents.
+
+## 4 - Conclusion and future works
+
+  - To conclude, we've saw that text classification is a complex problem, and solving it depands on the data and its representation in the preprocessing step, and of course on the model. 
+  
+  - Here we've improved the performances from a classifier to another, and we still can improve it if we dive into Recurrent neural networks which are the state-of-the-arts now for text classifications, one way to do that if instead of using the representations above, we can use the data in a sequential way to feed it to LSTMs layers or even Biderectional LSTMs which gives good performances in this kind of problems.
 
 
 
