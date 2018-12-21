@@ -27,7 +27,7 @@ final-lab-RassimAB created by GitHub Classroom
   * Scientific.
   
     We can see the distribution of the documents over these 10 classes in the following image :
-  ![Distribution of the documents](https://github.com/Rouen-NLP/final-lab-RassimAB/blob/master/classesCount.png)
+  ![Distribution of the documents]()
   
   According to this plot, the distribution is not very unbalanced besides the number of Memos, Emails and Letters Which are slightly raised in this dataset.
   
@@ -117,7 +117,7 @@ Test | 71,8%
 
 Confusion matrix : 
 
-  ![Distribution of the documents](https://github.com/Rouen-NLP/final-lab-RassimAB/blob/master/cm_nb.png)
+  ![Distribution of the documents]()
 
 
 
