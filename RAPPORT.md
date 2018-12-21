@@ -14,4 +14,4 @@ final-lab-RassimAB created by GitHub Classroom
 ## Database description and analysis
 
   The Database contains 3482 text documents distributed in several categories listed below : 
-  
+  ![Distribution of the documents](https://github.com/Rouen-NLP/final-lab-RassimAB/blob/master/classesCount.png)
