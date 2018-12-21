@@ -136,9 +136,17 @@ Rank | alpha | Acc
 4 | 0.01 | 73,4%
 5 | 0.1 | 72,6%
 
-  - According to these approach, 
+  - According to these approach, the value of the hyperparameter alpha that gives the best performances (1.0) have been used to train the model on the whole training set with 17 iterations, and then applied on the validation and test sets, the results are the following: 
 
+Data | Acc 
+------------ | ------------- 
+Train | 94,7% 
+Dev | 71,3% 
+Test | 76%
 
+Confusion matrix : 
+
+![Distribution of the documents](https://github.com/Rouen-NLP/final-lab-RassimAB/blob/master/cm_nb2.png)
 
 
 
