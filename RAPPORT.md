@@ -49,3 +49,55 @@ final-lab-RassimAB created by GitHub Classroom
   X_test, X_dev, y_test, y_dev = train_test_split(X_test, y_test, test_size=0.50)
   ```
 
+  ### 2.2 - Data representations : (BoW & TF-IDF)
+  
+   We'll use two different text representations which are Bag of words and TF-IDF. Then compare how the models that we'll define deal with those sturctures and which ones gives the best performances with the best hyperparameters. 
+   
+  ```
+  def bow_rep(X_train, X_dev, X_test):
+    # Create document vectors
+    count_vectorizer = CountVectorizer()
+    vectorizer = CountVectorizer(max_features=2000)
+    vectorizer.fit(X_train)
+    X_train_counts = vectorizer.transform(X_train)
+    X_test_counts = vectorizer.transform(X_test)
+    X_dev_counts = vectorizer.transform(X_dev)
+    
+    return X_train_counts, X_dev_counts, X_test_counts
+    
+  def tf_idf_rep(X_train_counts, X_dev_counts, X_test_counts):
+
+    tf_transformer = TfidfTransformer().fit(X_train_counts)
+    X_train_tf = tf_transformer.transform(X_train_counts)
+    X_dev_tf = tf_transformer.transform(X_dev_counts)
+    X_test_tf = tf_transformer.transform(X_test_counts)
+    
+    return X_train_tf, X_dev_tf, X_test_tf
+  ```
+  
+  Now to choose the best machine learning model, we'll make several test and compare how these 2 data representations infuence the performances. First we set up a naïve bayes model which is the most commun and one of the best models for text classification because it's based on probabilities, and try to figure out which best hyperparameters it would fit with, then we set up a neural network (MLP).
+  
+## Documents classification & performance analysis 
+
+  ### Naïve Bayes classifier
+  
+  - The idea is based on running multiple Naïve bayes classifiers with several values of the hyperparameter 'alpha', starting from without smoothing (alpha = 0) to 5.0 with a step or 1. And apply a 5-fold cross validation to test the model accuracy by computer the mean of the 5 experiments
+  - We'll start with the BoW representation and then TF-IDF.
+  
+  The following are the results with BoW representation :
+  
+  Rank | alpha | Acc
+------------ | ------------- | -------------
+1 | 1.0 | 68,8%
+2 | 2.0 | 68,5%
+3 | 3.0 | 67,9%
+4 | 4.0 | 67,6%
+5 | 5.0 | 66,9%
+6 | 0.0 | 63,2%
+
+
+
+
+
+
+
