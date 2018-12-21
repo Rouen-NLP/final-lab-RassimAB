@@ -1,7 +1,6 @@
-### final-lab-RassimAB
-final-lab-RassimAB created by GitHub Classroom
-
 # Documents Classification for American Tobacco group
+
+##### Rassim ABDOU.
 
 ## Introduction
 
@@ -156,11 +155,4 @@ Confusion matrix :
 
   - To conclude, we've saw that text classification is a complex problem, and solving it depands on the data and its representation in the preprocessing step, and of course on the model. 
   
-  - Here we've improved the performances from a classifier to another, and we still can improve it if we dive into Recurrent neural networks which are the state-of-the-arts now for text classifications, one way to do that if instead of using the representations above, we can use the data in a sequential way to feed it to LSTMs layers or even Biderectional LSTMs which gives good performances in this kind of problems.
-
-
-
-
-
-
-
+  - Here we've improved the performances from a classifier to another, and we still can improve it if we dive into Recurrent neural networks which are the state-of-the-arts now for text classifications, one way to do that if instead of using the representations above, we can use the data in a sequential way to feed into to LSTMs layers or even Biderectional LSTMs which gives good performances in this kind of problems.
