@@ -11,7 +11,22 @@ final-lab-RassimAB created by GitHub Classroom
   
   So first we will undertake and analysis of the data present in our database, then we define a process for creating the traning, validation, and test bases so we can propose different models and test different classification algorithmes, and finally we will discuss about the results of these models and future works.
 
-## Database description and analysis
+## Dataset description and analysis
 
-  The Database contains 3482 text documents distributed in several categories listed below : 
+  The Database contains 3482 text documents distributed in several categories listed below :
+  
+  * Advertisement.
+  * Email.
+  * Form.
+  * Letter.
+  * Memo.
+  * News.
+  * Note.
+  * Report.
+  * Resume.
+  * Scientific.
+  
+    We can see the distribution of the documents over these 10 classes in the following image :
   ![Distribution of the documents](https://github.com/Rouen-NLP/final-lab-RassimAB/blob/master/classesCount.png)
+  
+  According to this plot, the distribution is not very unbalanced besides the number of Memos, Emails and Letters Which are slightly raised in this dataset.
