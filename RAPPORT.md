@@ -126,7 +126,17 @@ Confusion matrix :
 
   ### MLP classifier
   
-  - The MLP classifier have been trained and tested with also the BoW representation while it's the representation that fits the best for these data. For the hyperparameters we've done the same approach as before to get the best 
+  - The MLP classifier have been trained and tested with also the BoW representation while it's the representation that fits the best for these data. For the hyperparameters we've done the same approach as before to get the best value for the parameter that influence the performance of the MLP (which is alpha), the results we got are the following :
+
+Rank | alpha | Acc
+------------ | ------------- | -------------
+1 | 1.0 | 74,1%
+2 | 0.001 | 73,7%
+3 | 0.0001 | 73,6%
+4 | 0.01 | 73,4%
+5 | 0.1 | 72,6%
+
+  - According to these approach, 
 
 
 
